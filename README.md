@@ -1,45 +1,17 @@
-# Learning template [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/hchiam/learning-template/blob/main/LICENSE)
+# Learning AutoML [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/hchiam/learning-template/blob/main/LICENSE)
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
-(To use this template fast with [`gh` CLI](https://github.com/hchiam/learning-gh), you can run [`gh repo create --template learning-template learning-...`](https://cli.github.com/manual/gh_repo_create))
+https://towardsdatascience.com/getting-started-with-automl-vision-alpha-ba769121235c?gi=50d5dbdc9899
 
-(To create a convenience script repo, use this template instead: https://github.com/hchiam/convenience)
+https://gist.github.com/yufengg/984ed8c02d95ce7e95e1c39da906ee04
 
-(To create a website fast, use a code generator like [`create-next-app`](https://github.com/hchiam/learning-nextjs), [`sapper`](https://github.com/hchiam/learning-sapper), a [svelte template](https://github.com/sveltejs/template), or [`yo`](https://yeoman.io/generators) )
+https://ffmpeg.org/download.html or just a CLI command like `brew install ffmpeg` (and check that it's installed by running `ffmpeg -version`, yes with just one dash)
 
-<!-- Add reference link(s) here -->
+https://cloud.google.com/storage/docs/gsutil_install or just one of the CLI commands like `pip3 install gsutil` (and check that it's installed by running `gsutil --version`)
 
-## From scratch
+https://cloud.google.com/automl
 
-Using [`yarn`](https://github.com/hchiam/learning-yarn):
+## Even more AI/ML stuff
 
-```bash
-yarn add
-```
-
-Or with `npm`:
-
-```bash
-npm install
-```
-
-And then:
-
-```bash
-
-```
-
-## Starting by testing out this repo <!-- Replace "template"s and "# and then ..."s in this section -->
-
-Using [`yarn`](https://github.com/hchiam/learning-yarn): (triple-click to select all)
-
-```bash
-git clone https://github.com/hchiam/learning-template.git && cd learning-template && yarn; # and then ...
-```
-
-Or with `npm`: (triple-click to select all)
-
-```bash
-git clone https://github.com/hchiam/learning-template.git && cd learning-template && npm install; # and then ...
-```
+https://github.com/hchiam/machineLearning
