@@ -1,0 +1,3 @@
+chair_wood
+bike
+chair_blue

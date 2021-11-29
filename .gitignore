@@ -6,4 +6,4 @@ dist
 *.jpg
 *.jpeg
 *.png
-*.bin
+# *.bin

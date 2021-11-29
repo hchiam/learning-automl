@@ -100,6 +100,23 @@ For more info specific to AutoML Edge web app setup: https://cloud.google.com/vi
 
 https://cloud.google.com/vertex-ai/docs/training/evaluating-automl-models
 
+## surge deploy
+
+```sh
+mkdir surge
+mkdir surge/model_export
+mkdir surge/all_data
+mkdir surge/all_data/bike
+cp model_export/model.json surge/model_export/model.json
+cp model_export/dict.txt surge/model_export/dict.txt
+cp model_export/group1-shard1of1.bin surge/model_export/group1-shard1of1.bin
+cp all_data/bike/bike070.jpg surge/all_data/bike/bike070.jpg
+cp index.html surge/index.html
+cp favicon.ico surge/favicon.ico
+surge surge
+# surge surge https://learning-automl-test.surge.sh
+```
+
 ## Even more AI/ML stuff
 
 https://github.com/hchiam/machineLearning
