@@ -102,7 +102,7 @@ For more info specific to AutoML Edge web app setup: https://cloud.google.com/vi
 
 https://cloud.google.com/vertex-ai/docs/training/evaluating-automl-models
 
-## surge deploy
+## [`surge`](https://github.com/hchiam/learning-surge) deploy
 
 ```sh
 mkdir surge
