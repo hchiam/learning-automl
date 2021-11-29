@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learning AutoML Test</title>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs-automl"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script> -->
+    <style>
+      body {
+        background: #333;
+        color: snow;
+        font-family: arial, monospace, tahoma;
+        text-align: center;
+        margin-top: 10vh;
+      }
+
+      img {
+        max-height: 20em;
+      }
+
+      a {
+        color: snow;
+      }
+
+      a:hover {
+        color: lime;
+      }
+
+      pre {
+        text-align: start;
+        margin: auto;
+        width: min-content;
+      }
+
+      #predictions {
+        background: black;
+        color: lime;
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AutoML Edge Demo</h1>
+    <p>
+      (AutoML Edge model exported from Vertex AI API of Google Cloud Platform)
+    </p>
+    <h2>Predictions:</h2>
+    <pre id="predictions">(please wait)</pre>
+    <h2>Image:</h2>
+    <img
+      id="image"
+      alt="image could not load"
+      src="all_data/bike/bike070.jpg"
+    />
+    <p>
+      This demo is based off of
+      <a
+        href="https://codepen.io/hchiam/pen/LYYRLzz?editors=1010"
+        target="_blank"
+        rel="noreferrer noopener"
+        >https://codepen.io/hchiam/pen/LYYRLzz?editors=1010</a
+      >
+    </p>
+    <script>
+      predictImage();
+      async function predictImage() {
+        const img = document.getElementById("image");
+
+        console.log("Model loading...");
+        // const model = await mobilenet.load();
+        // const model = await tf.loadLayersModel("model_export/model.json");
+        const model = await tf.automl.loadImageClassification(
+          "model_export/model.json" // file://path/to/my-model/model.json
+        );
+        console.log("Model is loaded!");
+
+        const predictions = await model.classify(img);
+        console.log("Predictions: ", JSON.stringify(predictions, null, 2));
+
+        const longestLabelLength = Math.max(
+          ...predictions.map((p) => p.label.length)
+        );
+
+        const predictionsText = predictions
+          .sort((a, b) => b.prob - a.prob)
+          .map((p) => {
+            const label = p.label.padEnd(longestLabelLength, " ");
+            const prob = String(Math.round(p.prob * 100)).padStart(3, " ");
+            return `${label} : ${prob}% sure.`;
+          })
+          .join("\n");
+
+        document.getElementById("predictions").textContent = predictionsText;
+      }
+    </script>
+  </body>
+</html>

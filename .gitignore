@@ -1,3 +1,9 @@
 node_modules
 .DS_Store
 .env
+.cache
+dist
+*.jpg
+*.jpeg
+*.png
+*.bin

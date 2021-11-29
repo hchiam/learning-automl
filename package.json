@@ -1,0 +1,14 @@
+{
+  "name": "learning-automl",
+  "version": "1.0.0",
+  "repository": "https://github.com/hchiam/learning-automl.git",
+  "author": "hchiam <hchiam@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "http-server -p 8000"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.0.0"
+  }
+}
