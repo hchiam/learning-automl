@@ -4,6 +4,8 @@ Just one of the things I'm learning. https://github.com/hchiam/learning
 
 Let AutoML figure out how to train your model, like the hyperparameters, and then export/deploy that model. The web interface can even export explainer visualizations into Google Storage buckets.
 
+Live demo: https://learning-automl-test.surge.sh/
+
 ## Tutorial I'm following
 
 https://towardsdatascience.com/getting-started-with-automl-vision-alpha-ba769121235c?gi=50d5dbdc9899 It's already starting to get out of date, but shows the main ideas. The notes below help fill in some of the current steps I had to do to get a running demo to actually work.
