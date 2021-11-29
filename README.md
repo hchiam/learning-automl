@@ -18,7 +18,7 @@ https://cloud.google.com/storage/docs/gsutil_install or just one of the CLI comm
 
 Create a project on https://console.cloud.google.com/ and then enable billing for that project (make sure it's linked), and then open https://cloud.google.com/automl and choose AutoML Vision and enable adding Vertex AI APO (aiplatform.googleapis.com) to that project. (As of this writing, AutoML Vision is now part of the new Vertex AI.) The key pages are "Datasets", "Training", and "Models" (for model endpoints).
 
-Vertex AI dashboard: https://console.cloud.google.com/vertex-ai?project=<YOUR-PROJECT-ID>
+Vertex AI dashboard: https://console.cloud.google.com/vertex-ai?project=YOUR-PROJECT-ID
 
 Example: https://console.cloud.google.com/vertex-ai?project=learning-automl-test
 
