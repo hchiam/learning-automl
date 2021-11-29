@@ -2,7 +2,7 @@
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
-Let AutoML figure out how to train your model, like the hyperparameters, and then export/deploy that model. The web interface can even export explainer visualizations ("Explainable AI") into Google Storage buckets.
+Let AutoML figure out how to train your model, like the hyperparameters, and then export/deploy that model. Do things like training custom labels for your department store's chair models, as opposed to generically detecting "chair". The web interface can even export explainer visualizations ("Explainable AI") into Google Storage buckets.
 
 Live demo: https://learning-automl-test.surge.sh/
 
